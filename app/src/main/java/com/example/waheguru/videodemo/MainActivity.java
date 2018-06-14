@@ -8,7 +8,7 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
- 
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -21,38 +21,37 @@ public class MainActivity extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);
 
-        Log.i("OnCreate","Inside OnCreate method Line 14");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.i("onStart","Inside OnStart method");
+
     }
 
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("onResume","Inside OnResume");
+
     }
 
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.i("onPause","inside onPause");
+
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i("onStop","Inside onStop method");
+
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i("onDestyroy method","Inside OnDestroy method");
+
     }
 }
